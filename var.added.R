@@ -12,5 +12,5 @@ var.added<-function(quarterpath1,quarterpath2){
   }
   quarter1<-folder.variables(quarterpath1)
   quarter2<-folder.variables(quarterpath2)
-  return(subset(quarter2,!(quarter2[1:2] %in% q uarter1)))
+  return(subset(quarter2,!(quarter2 %in% quarter1)))
 }

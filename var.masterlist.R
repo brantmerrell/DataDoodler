@@ -1,5 +1,6 @@
 directories<-c("C:/Users/Josh/Documents/All_Reports_20140630",
-               "C:/Users/Josh/Documents/All_Reports_20140930")
+               "C:/Users/Josh/Documents/All_Reports_20140930",
+               "C:/Users/Josh/Documents/All_Reports/All_Reports_19921231")
 var.masterlist<-function(directories){
   folder.variables<-function(quarterpath){
     resetwd<-getwd()

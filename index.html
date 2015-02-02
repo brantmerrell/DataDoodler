@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--THIS FILE IS GENERATED via Grunt:htmlbuild FROM htmlBuildTemplates/index.html-->
+<html lang="en">
+
+<head>
+    <!--CSS FILES-->
+    <link type="text/css" rel="stylesheet" href="bower_components/foundation/css/foundation.css"/>
+    <link type="text/css" rel="stylesheet" href="css/ddl.features.section.css"/>
+</head>
+
+<body ng-app="ddlApp">
+
+
+<div class="">
+    <div class="header">
+        <img src="images/DataDoodlerLogoWithStylishGlob_03.png" class="logo"/>
+    </div>
+</div>
+<div ng-controller="dataSourcesCtrl">
+
+
+
+    <ddl-section title="Data Sources" section-type="DataSources">
+        <ddl-glossary ng-repeat="ds in dss.dataSources" datasource="ds" ></ddl-glossary>
+    </ddl-section>
+
+    <ddl-section title="Variables for this doodle" section-Type="ActiveVariables">
+
+    </ddl-section>
+
+    <ddl-section title="Scratch Pad" section-Type="ScratchPad">
+fff
+    </ddl-section>
+</div>
+
+
+<!--LIBRARY SCRIPTS-->
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script type="text/javascript" src="bower_components/angular-mocks/angular-mocks.js"></script>
+<script type="text/javascript" src="bower_components/highcharts-release/highcharts.js"></script>
+<script type="text/javascript" src="bower_components/angular-resource/angular-resource.js"></script>
+<script type="text/javascript" src="bower_components/highcharts-ng/dist/highcharts-ng.js"></script>
+
+<!--APPLICATION SCRIPTS-->
+<script type="text/javascript" src="app/ddl.Features.js"></script>
+
+</body>
+
+</html>

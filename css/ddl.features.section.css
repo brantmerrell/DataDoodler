@@ -38,7 +38,7 @@ ddl-section .section-title{
     padding-left:.4rem;
     padding-right: .6rem;
     padding-bottom: .5rem;
-    margin-left:-.2rem;
+    margin-left:-.3rem;
     cursor: pointer;
 
     -webkit-user-select: none; /* Chrome/Safari */
@@ -53,12 +53,17 @@ ddl-section .section-summary{
     margin-left:.5rem;
 }
 
+.glossary-container{
+    position:relative;
+    display:block;
+}
+
 ddl-section .glossary-container{
     border:1px solid beige;
     margin:1.25rem;
 }
 ddl-section ddl-ds-names .dsname{
-
+position: relative;
     font-size:.85rem;
     margin-left:.9rem;
     text-decoration: underline;
@@ -89,4 +94,14 @@ ddl-section ddl-ds-names .dsname{
 
 .glossary-container .input-filter{
     height:1.8rem;
+    width:200px;
+    display:inline;
+    margin-right: 20px;
+    padding-top:.25rem;
+    padding-bottom:.15rem;
+}
+
+.glossary-container .tdHr{
+    margin-top:.8rem;
+    margin-bottom: .8rem;
 }

@@ -1,0 +1,107 @@
+body{
+    background-color:#C5E6C1;
+}
+
+.header{
+    position:relative;
+    height: 140px;
+    background-color: #6dc065;
+    margin-bottom: 1rem;
+}
+.header .logo{
+    margin:1rem;
+}
+
+
+ddl-section .section-container{
+    border: 1px solid darkgray;
+    resize: vertical;
+    overflow: auto;
+    position:relative;
+
+    margin-top:1rem;
+    padding:.25rem;
+    background-color: rgb(255, 247, 234);
+}
+ .collapsed{
+    height:2.2rem;
+}
+
+ddl-section .section-title{
+    padding-top:1rem;
+    font-size: .8rem;
+    font-weight:bold;
+    color: #f4fdec;
+    background-color: #96e996;
+    position:relative;
+    top:-.1rem;
+    padding-left:.4rem;
+    padding-right: .6rem;
+    padding-bottom: .5rem;
+    margin-left:-.3rem;
+    cursor: pointer;
+
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    -o-user-select: none;
+    user-select: none;
+}
+
+ddl-section .section-summary{
+    font-size: .85rem;
+    margin-left:.5rem;
+}
+
+.glossary-container{
+    position:relative;
+    display:block;
+}
+
+ddl-section .glossary-container{
+    border:1px solid beige;
+    margin:1.25rem;
+}
+ddl-section ddl-ds-names .dsname{
+position: relative;
+    font-size:.85rem;
+    margin-left:.9rem;
+    text-decoration: underline;
+}
+
+.glossary-container .ds-name{
+    font-weight: 500;
+    font-size:1rem;
+    padding:.25rem;
+    color: #f4fdec;
+    background-color: #96e996;;
+}
+
+.glossary-container .attribute-name{
+     font-weight: 400;
+     padding:.25rem;
+     color: #2a6819;
+     font-size: .85rem;
+ }
+
+.glossary-container .attribute-value{
+    font-weight: 700;
+    padding-left:0;
+    padding-right:.65rem;
+    color: #2a6819;
+    font-size: .8rem;
+}
+
+.glossary-container .input-filter{
+    height:1.8rem;
+    width:200px;
+    display:inline;
+    margin-right: 20px;
+    padding-top:.25rem;
+    padding-bottom:.15rem;
+}
+
+.glossary-container .tdHr{
+    margin-top:.8rem;
+    margin-bottom: .8rem;
+}

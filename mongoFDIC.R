@@ -17,7 +17,15 @@ mongoFDIC<-function(row,df=FDIC,dbN="local",h="localhost"){
                              doc=workdoc)
   dbDisconnect(mongo)
 }
-#library(RMongo)
-#script:
-#FDIC<-alldefinitions()
-#lapply(1:nrow(df),mongoFDIC)
+
+# library(RMongo)
+# tested script:
+# FDIC<-alldefinitions()
+# mongoFDIC(1)
+# mongoFDIC(39)
+# lapply(2:38,mongoFDIC)
+# lapply(40:100,mongoFDIC)
+# lapply(101:300,mongoFDIC)
+# lapply(301:600,mongoFDIC)
+# lapply(601:900,mongoFDIC)
+# lapply(901:nrow(FDIC),mongoFDIC)

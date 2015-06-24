@@ -1,93 +1,6 @@
 ddFiles<-list.files("./DataDoodler",
                     full.names=TRUE,
                     recursive=TRUE) # Large character (5045 elements, 773.4 kb)
-hist(nchar(ddFiles))
-ddFiles<-ddFiles[0<file.info(ddFiles)$size] # Large character (5045 elements, 773.4 kb)
-LINE<-readLines(ddFiles[1])
-DF<-data.frame(file=ddFiles[1], lineID=1:length(LINE), line=LINE)
-for(n in 2:length(ddFiles)){
-  LINE<-readLines(ddFiles[n])
-  DF<-rbind(DF,
-            data.frame(file=ddFiles[n], 
-                       lineID=1:length(LINE),
-                       line=LINE))
-}
-## Error @ n=1920L:
-# "./DataDoodler/node_modules/gulp-jscs/node_modules/jscs/node_modules/prompt/node_modules/
-# utile/node_modules/ncp/test/fixtures/src/c"
-file.info(ddFiles[1920])$size
-readLines(ddFiles[1920])
-readLines(ddFiles[1921])
-readLines(ddFiles[1922])
-readLines(ddFiles[1923])
-readLines(ddFiles[1924])
-for(n in 1924:length(ddFiles)){
-  LINE<-readLines(ddFiles[n])
-  DF<-rbind(DF,
-            data.frame(file=ddFiles[n], 
-                       lineID=1:length(LINE),
-                       line=LINE))
-}
-## Error @ n=1925L:
-# "./DataDoodler/node_modules/gulp-jscs/node_modules/jscs/node_modules/
-# prompt/node_modules/utile/node_modules/ncp/test/fixtures/src/sub/b"
-for(n in 1926:length(ddFiles)){
-  LINE<-readLines(ddFiles[n])
-  DF<-rbind(DF,
-            data.frame(file=ddFiles[n], 
-                       lineID=1:length(LINE),
-                       line=LINE))
-}
-## Error @ n=3577L:
-# "./DataDoodler/node_modules/gulp-jshint/node_modules/rcloader/node_modules
-# /rcfinder/test/fixtures/foo/foo/foo/foo/root"
-readLines(ddFiles[3577])
-readLines(ddFiles[3578])
-for(n in 3578:length(ddFiles)){
-  LINE<-readLines(ddFiles[n])
-  DF<-rbind(DF,
-            data.frame(file=ddFiles[n], 
-                       lineID=1:length(LINE),
-                       line=LINE))
-}
-## Error @ n=3582L:
-readLines(ddFiles[3582])
-readLines(ddFiles[3583])
-
-for(n in 3583:length(ddFiles)){
-  LINE<-readLines(ddFiles[n])
-  DF<-rbind(DF,
-            data.frame(file=ddFiles[n], 
-                       lineID=1:length(LINE),
-                       line=LINE))
-}
-## Error @ n=4122L:
-readLines(ddFiles[4122])
-readLines(ddFiles[4123])
-readLines(ddFiles[4124])
-for(n in 4124:length(ddFiles)){
-  LINE<-readLines(ddFiles[n])
-  DF<-rbind(DF,
-            data.frame(file=ddFiles[n], 
-                       lineID=1:length(LINE),
-                       line=LINE))
-}
-## Error @ n=4125L:
-readLines(ddFiles[4125])
-readLines(ddFiles[4126])
-for(n in 4126:length(ddFiles)){
-  LINE<-readLines(ddFiles[n])
-  DF<-rbind(DF,
-            data.frame(file=ddFiles[n], 
-                       lineID=1:length(LINE),
-                       line=LINE))
-}
-?quantile
-quantile(file.info(ddFiles[1:5045])$size,probs=c(.01))
-
-hist(nchar(DF$line))
-length(levels(DF$line))
-hist(nchar(levels(DF$line)))
 ddFiles<-ddFiles[0<file.info(ddFiles)$size] # Large character (5019 elements, 769.2 kb)
 LINE<-readLines(ddFiles[1])
 DF<-data.frame(file=ddFiles[1], lineID=1:length(LINE), line=LINE)
@@ -98,3 +11,44 @@ for(n in 2:length(ddFiles)){
                        lineID=1:length(LINE),
                        line=LINE))
 }
+nchar(DF)
+nrow(DF)
+length(levels(DF$file))
+length(unique(DF$lineID))
+max(DF$lineID)
+length(levels(DF$line))
+sum(DF$line=="") # [1] 68018
+sum(DF$line==" ") # [1] 613
+hist(nchar(levels(DF$line)))
+sum(3e+05<nchar(levels(DF$line)))
+large<-which(3e+05<nchar(as.character(DF$line)))
+normal<-which(nchar(as.character(DF$line))<=3e+05)
+DF[large,"file"]
+hist(nchar(as.character(DF[normal,"line"])))
+large<-which(50000<nchar(as.character(DF$line)))
+normal<-which(nchar(as.character(DF$line))<=50000)
+hist(nchar(as.character(DF[normal,"line"])))
+rm(large,normal)
+quantile(nchar(as.character(DF$line)), seq(0,1,.01))
+DF<-DF[nchar(as.character(DF$line))!=0,]
+quantile(nchar(as.character(DF$line)), seq(0,1,.01))
+small<-which(nchar(as.character(DF$line))<=20)
+huge<-which(500<nchar(as.character(DF$line)))
+hist(nchar(as.character(DF[-c(small,huge),"line"])))
+rm(LINE,huge,lineID,n,small)
+ddFiles<-ddFiles[!grepl("node|bower",ddFiles)]
+LINE<-readLines(ddFiles[1])
+DF<-data.frame(file=ddFiles[1], lineID=1:length(LINE), line=LINE)
+for(n in 2:length(ddFiles)){
+  LINE<-readLines(ddFiles[n])
+  DF<-rbind(DF,
+            data.frame(file=ddFiles[n], 
+                       lineID=1:length(LINE),
+                       line=LINE))
+}
+DF<-DF[as.character(DF$line)!="",]
+View(DF)
+write.csv(DF,"./DataDoodler/ddDocsCompiled.csv",row.names=FALSE)
+View(DF[grepl("\\.js$",DF[,1]),])
+length(DF[grepl("\\.js$",DF[,1]),3])
+as.character((DF[grepl("\\.js$",DF[,1]),3])[seq(1,651,length.out=20)+1])

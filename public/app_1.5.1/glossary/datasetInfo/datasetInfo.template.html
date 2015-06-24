@@ -1,0 +1,17 @@
+<span class="dataset-info-container form-group">
+
+    <p>
+        <span class="dataset-info-label">Dataset Name:</span>
+        <span class="dataset-info-value" ng-bind="vm.selectedDataset.name"></span>
+    </p>
+
+    <p>
+        <span class="dataset-info-label">Description:</span>
+        <span class="dataset-info-value" ng-bind="vm.selectedDataset.description"></span>
+    </p>
+
+    <input type="button" value="Remove"
+           ng-click="vm.removeDataset(vm.selectedDataset.name)">
+    </input>
+
+</span>

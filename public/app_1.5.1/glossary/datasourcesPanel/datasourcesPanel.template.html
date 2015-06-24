@@ -1,0 +1,27 @@
+<span class="data-sources-panel">
+
+<div class="glossary-directive-datasources-container">
+    <span>Datasets included in this doodle:</span>
+
+    <span ng-repeat="ds in vm.modelService1.dataSources"
+          class="data-sources-panel-datasource-name">
+        <span ng-bind="ds.name"></span>
+        <span class="data-sources-panel-datasource-info-icon glyphicon glyphicon-info-sign"
+              ng-click="vm.showDatasetInfo(ds.name)"></span>
+    </span>
+
+    <span ng-click="vm.newDatasetVisible=!vm.newDatasetVisible">
+        <span>Add New Dataset</span>
+        <span class="glyphicon glyphicon-plus"></span>
+    </span>
+
+    <div ng-show="vm.newDatasetVisible">
+        <new-dataset>
+</div>
+
+    <div ng-show="vm.showDatasetInfoVisible"
+         class="data-sources-panel-datasource-info-container">
+        <dataset-info></dataset-info>
+    </div>
+</div>
+</span>

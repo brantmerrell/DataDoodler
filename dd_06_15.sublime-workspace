@@ -1,0 +1,673 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bac",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/dev/dd_06_2015/app/views/index.server.view.html",
+			"settings":
+			{
+				"buffer_size": 111,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/dev/dd_06_2015/public/modules/articles/tests/articles.client.controller.test.js",
+			"settings":
+			{
+				"buffer_size": 5378,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/dev/dd_06_2015/public/modules/articles/controllers/articles.client.controller.js",
+			"settings":
+			{
+				"buffer_size": 1351,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/dev/dd_06_2015/public/modules/articles/config/articles.client.config.js",
+			"settings":
+			{
+				"buffer_size": 389,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/dev/dd_06_2015/gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 3681,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/dev/dd_06_2015/config/config.js",
+			"settings":
+			{
+				"buffer_size": 1664,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/dev/dd_06_2015/public/modules/users/config/users.client.config.js",
+			"settings":
+			{
+				"buffer_size": 708,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 6 files for \"topbarx\" (whole word)\n\nC:\\dev\\dd_06_2015\\public\\modules\\articles\\config\\articles.client.config.js:\n    6  		// Set top bar menu items\n    7  		Menus.addMenuItem('topbar', 'Articles', 'articles', 'dropdown', '/articles(/create)?');\n    8: 		Menus.addSubMenuItem('topbarx', 'articles', 'List Articles', 'articles');\n    9  		Menus.addSubMenuItem('topbar', 'articles', 'New Article', 'articles/create');\n   10  	}\n\n1 match in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 453,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"package control:inst",
+				"Package Control: Install Package"
+			],
+			[
+				"gist",
+				"Package Control: List Packages"
+			],
+			[
+				"jsc",
+				"JSCS Formatter: Format this file"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"set syntax:j",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"console",
+				"Set Syntax: R Console"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 431.0,
+		"history":
+		[
+			"Package Control",
+			"Package Control: ",
+			"Package Control: Package",
+			"Package",
+			"Install Package",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"cls",
+			"clear()",
+			"clear",
+			"python",
+			"python --version",
+			"py",
+			"sublime.version()",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"cls",
+			"ls",
+			"dir"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/dev/dd_06_2015",
+		"/C/dev/dd_06_2015/config/sslcerts",
+		"/C/dev/dd_06_2015/public",
+		"/C/dev/dd_06_2015/public/modules/core",
+		"/C/dev/dd_06_2015/public/modules/users/config",
+		"/C/dev/dd_06_2015/public/modules/users/controllers",
+		"/C/dev/dd_06_2015/public/modules/users/css",
+		"/C/dev/dd_06_2015/public/modules/users/img",
+		"/C/dev/dd_06_2015/public/modules/users/views",
+		"/C/dev/dd_06_2015/public/modules/users/views/authentication"
+	],
+	"file_history":
+	[
+		"/C/dev/datadoodler/gulpFile.js",
+		"/C/dev/datadoodler/routes/authenticate.js",
+		"/C/dev/datadoodler/datadoodler.sublime-project",
+		"/C/dev/datadoodler/package.json",
+		"/C/dev/datadoodler/src/backEnd/routes/index.js",
+		"/C/dev/datadoodler/src/frontEnd/index.html",
+		"/C/dev/datadoodler/src/backEnd/views/index.ejs",
+		"/C/dev/datadoodler/src/backEnd/views/error.ejs",
+		"/C/dev/datadoodler/src/backEnd/index.html",
+		"/C/dev/datadoodler/src/index.html",
+		"/C/dev/datadoodler/src/backEnd/app.js",
+		"/C/dev/datadoodler/src/backEnd/routes/api.js",
+		"/C/dev/datadoodler/src/backEnd/views/index1.ejs",
+		"/C/dev/datadoodler/src/backEnd/passport-init.js",
+		"/C/dev/datadoodler/src/backEnd/package.json",
+		"/C/dev/datadoodler/src/backEnd/routes/authenticate.js",
+		"/C/Users/Kent/Downloads/DS_Store",
+		"/C/dev/datadoodler/src/backEnd/bin/www",
+		"/C/dev/datadoodler/src/backEnd/models/models.js",
+		"/C/dev/datadoodler/src/backEnd/routes/users.js",
+		"/C/Users/Kent/AppData/Roaming/Sublime Text 3/Packages/CMD/Context.sublime-menu",
+		"/C/Users/Kent/AppData/Roaming/Sublime Text 3/Packages/Cmd/Context.sublime-menu",
+		"/C/dev/datadoodler/src/frontEnd/styles/main.css",
+		"/C/dev/datadoodler/src/backEnd/node_modules/cookie-parser/README.md",
+		"/C/Users/Kent/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Kent/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Program Files/Sublime Text 3/Packages/Theme - Default.sublime-package",
+		"/C/dev/datadoodler/.elasticbeanstalk/config.yml",
+		"/C/dev/jpapa/pluralsight-gulp/src/client/index.html",
+		"/C/Users/Kent/Downloads/DataDoodler.rtb",
+		"/C/Users/Kent/Documents/UP-eBiz/Web/Nerium.AdoManager.Web/Nerium.AdoManager/app/services/newAdoService.js",
+		"/C/Users/Kent/Downloads/download.csv",
+		"/C/Users/Kent/Documents/UP-eBiz/.gitignore",
+		"/C/Users/Kent/Documents/UP-eBiz/Web/Nerium.AdoManager.Web/Nerium.AdoManager/Views/Renderings/Modules/CreateAutoOrder/NewAdoShipping.cshtml",
+		"/C/Users/Kent/Documents/UP-eBiz/Web/StaticUiDev/.gitignore",
+		"/C/Users/Kent/Documents/UP-eBiz/Publish.cmd",
+		"/C/Users/Kent/Downloads/Bugs.rtb",
+		"/C/dev/datadoodler/src/client/app/layout/header.js",
+		"/c/path/sub3.cmd",
+		"/C/dev/datadoodler_Section/datadooler_section.sublime-project",
+		"/C/dev/datadoodler/controllers/index.js",
+		"/C/Users/Kent/Documents/UP-eBiz/Web/Nerium.Global.Web/Scripts/App/insite.addresses.js",
+		"/C/Users/Kent/temp/gulpFile.js",
+		"/C/Users/Kent/Documents/Visual Studio 2013/Projects/Web/Web.sln",
+		"/C/Users/Kent/Documents/Visual Studio 2013/Projects/WebSite/WebSite.sln",
+		"/C/_web/Nerium.Web/Website/App_Config/Include/DataFolder.Prod-CD.config",
+		"/C/dev/datadoodler/gruntfile.js",
+		"/C/Users/Kent/Documents/UP-eBiz/Web/Nerium.Global.Web/config.rb",
+		"/C/Users/Kent/Documents/UP-eBiz/Web/Nerium.BackOffice.Web/Nerium.BackOffice/app/app.js",
+		"/C/dev/datadoodler/data/index.js",
+		"/C/dev/datadoodler/controllers/homeController.js",
+		"/C/dev/datadoodler/server.js",
+		"/C/dev/datadoodler/.bowerrc",
+		"/C/Users/Kent/Documents/UP-eBiz/Web/Nerium.Global.Web/Properties/PublishProfiles/Local.pubxml.user",
+		"/C/Users/Kent/Documents/UP-eBiz/Web/Nerium.Global.Web/preprocess/scss/adomanager/kdm/sass/main.scss",
+		"/C/Users/Kent/Downloads/phantomjs-1.9.8-windows/phantomjs-1.9.8-windows/github.js",
+		"/C/Users/Kent/Desktop/Development Window Layouts.ahk",
+		"/C/_web/.gitignore",
+		"/C/Users/Kent/Documents/UP-eBiz/Publish.Local.cmd",
+		"/C/dev/Adaptive.Codes/.gitignore",
+		"/C/Program Files (x86)/Intel/Intel(R) ME FW Recovery Agent/bin/html_docs/index.html",
+		"/C/dev/ckeditor/ckeditor_4.4.6_standard/ckeditor/samples/index.html",
+		"/C/dev/datadoodler/public/css/site.css",
+		"/C/dev/datadoodler/views/index.vash",
+		"/C/dev/datadoodler/views/layout.vash",
+		"/C/dev/datadoodler/public/test.html",
+		"/C/dev/2-demo/after/TheBoard/package.json",
+		"/C/Users/Kent/Documents/DataDoodler/gruntfile.js",
+		"/C/Users/Kent/Documents/DataDoodler/.idea/workspace.xml"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"<open files>",
+			"<open folders>",
+			"",
+			"C:\\dev\\datadoodler,-c:\\dev\\datadoodler\\bower_components",
+			"C:\\dev\\datadoodler,-**\\bootstrap*.*",
+			"C:\\dev\\datadoodler,-**\\bootstrap.**",
+			"C:\\dev\\datadoodler,-bootstrap.*",
+			"C:\\dev\\datadoodler,-bootstrap.css",
+			"C:\\dev\\datadoodler",
+			"C:\\Users\\Kent\\Documents\\DataDoodler\\.idea",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"dist",
+			"css",
+			"topbarx",
+			"addMenuItem",
+			"x",
+			"menu",
+			"class=",
+			"index",
+			"usernmae",
+			"app.js",
+			"var express",
+			"css",
+			".css",
+			"active",
+			"style",
+			"newAdoService",
+			"newBillingAccount",
+			"\n",
+			"\\n",
+			"project",
+			".*",
+			".idea",
+			"library home"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\\n\\n",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/dev/dd_06_2015/app/views/index.server.view.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 111,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								1
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/dev/dd_06_2015/public/modules/articles/tests/articles.client.controller.test.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5378,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2312,
+								2317
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 918.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/dev/dd_06_2015/public/modules/articles/controllers/articles.client.controller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/dev/dd_06_2015/public/modules/articles/config/articles.client.config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 389,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								389,
+								389
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/dev/dd_06_2015/gruntfile.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3681,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1412,
+								1416
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1115.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/dev/dd_06_2015/config/config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1664,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/dev/dd_06_2015/public/modules/users/config/users.client.config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 708,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 453,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										285,
+										292
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								292,
+								292
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "dd_06_15.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"api.js",
+				"src\\backEnd\\routes\\api.js"
+			],
+			[
+				"app.js",
+				"src\\backEnd\\app.js"
+			],
+			[
+				".css",
+				"src\\frontEnd\\styles\\main.css"
+			],
+			[
+				"",
+				"C:\\dev\\jpapa\\pluralsight-gulp\\src\\client\\index.html"
+			],
+			[
+				"gulp",
+				"C:\\dev\\datadoodler\\gulpFile.js"
+			],
+			[
+				"dd",
+				"C:\\Users\\Kent\\Downloads\\DataDoodler.rtb"
+			],
+			[
+				"inde",
+				"C:\\dev\\jpapa\\pluralsight-gulp\\src\\client\\index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 35.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 295.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

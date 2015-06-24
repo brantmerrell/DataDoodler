@@ -1,0 +1,11 @@
+<span class="new-dataset-container">
+    <span class="new-dataset-selection-container">
+    <p>Search for one of our publicly available datasets</p>
+    <span class="glyphicon glyphicon-search"></span>
+        <select ng-model="availabledataset" ng-options="ds1.name for ds1 in glossaryService.availableDataSets"></select>
+    </span>
+    <span class="new-dataset-selection-container">
+        Upload your own dataset
+    </span>
+
+</span>

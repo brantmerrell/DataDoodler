@@ -30,3 +30,49 @@ write.csv(DF,"./DataDoodler/ddDocsCompiled.csv",row.names=FALSE)
 length(levels(DF[,"file"])) # [1] 5029
 length(unique(as.character(DF[,"file"]))) # [1] 69
 View(DF[grepl("\\.js$",DF[,1]),])
+sum(grepl("\\.js$",DF[,"file"])) # [1] 651
+sum(grepl("\\.css$",DF[,"file"])) # [1] 293
+sum(grepl("\\.html$",DF[,"file"])) # [1] 202
+sum(!grepl("(\\.html$)|(\\.css$)|(\\.js$)",DF[,"file"])) # [1] 4628
+otherPattern<-"(\\.html$)|(\\.css$)|(\\.js$)"
+otherType<-which(!grepl(otherPattern,DF[,"file"])) # int [1:4628]
+DF[otherType[seq(1,4628,length.out=20)],"file"]
+sum(grepl("ddDocsCompiled.csv",DF[,"file"])) # 2870
+otherPattern<-paste(otherPattern,"|(\\.csv$)",sep="")
+otherType<-which(!grepl(otherPattern,DF[,"file"])) # int [1:1758]
+DF[otherType[seq(1,1758,length.out=20)],"file"]
+otherPattern<-paste(otherPattern,"|(\\.R$)",sep="")
+otherType<-which(!grepl(otherPattern,DF[,"file"])) # int [1:1562]
+DF[otherType[seq(1,1562,length.out=20)],"file"]
+otherPattern<-paste(otherPattern,"|(\\.sublime-workspace$)",sep="")
+otherType<-which(!grepl(otherPattern,DF[,"file"])) # int [1:425]
+DF[otherType[seq(1,425,length.out=20)],"file"]
+otherPattern<-paste(otherPattern,"|(\\.pdf$)",sep="")
+otherType<-which(!grepl(otherPattern,DF[,"file"])) # int [1:294]
+DF[otherType[seq(1,294,length.out=20)],"file"]
+otherPattern<-paste(otherPattern,"|(\\.json$)|(\\.svg$)|(\\.ejs$)",sep="")
+otherType<-which(!grepl(otherPattern,DF[,"file"])) # int [1:45]
+DF[otherType[seq(1,45,length.out=20)],"file"]
+otherPattern<-paste(otherPattern,"|(\\.md$)|(\\.png$)|(\\.sublime-project$)",sep="")
+otherType<-which(!grepl(otherPattern,DF[,"file"])) # int [1:7]
+DF[otherType,"file"] # [7] /DataDoodler/bin/www
+# induced function:
+Files<-as.vector(DF[,"file"])
+fileTypeCount<-function(Files){
+  if(class(Files)=="factor"){
+    Files<-as.vector(Files)
+  }
+  Files<-Files[grepl("\\.",Files)]
+  fileTypes<-strsplit(Files,"\\.")
+  for(n in 1:length(fileTypes)){
+    fileTypes[[n]]<-fileTypes[[n]][length(fileTypes[[n]])]
+  }
+  fileTypes<-unlist(fileTypes)
+  df<-data.frame(matrix(nrow=1,ncol=length(unique(fileTypes))))
+  names(df)<-unique(fileTypes)
+  for(fileType in unique(fileTypes)){
+    df[1,fileType]<-sum(grepl(paste("\\.",fileType,"$",sep=""),Files))
+  }
+  df
+}
+fileTypeCount(DF[,"file"])
